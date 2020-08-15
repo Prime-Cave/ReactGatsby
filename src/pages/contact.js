@@ -1,12 +1,13 @@
 import React from 'react'
 import ContactHero from '../components/contactPage/ContactHero'
+import Layout from '../layout/layout'
 
-const contact = () => {
+const events = () => {
     return (
-        <div>
+        <Layout>
             <ContactHero />
-        </div>
+        </Layout>
     )
 }
 
-export default contact
+export default events

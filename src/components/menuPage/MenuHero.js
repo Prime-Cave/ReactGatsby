@@ -6,7 +6,7 @@ import StyledHero from "../../utils/StyledHero"
 
 const getImages = graphql`
   query {
-    BackgroundImage: file(relativePath: { eq: "drinkHero.jpg" }) {
+    BackgroundImage: file(relativePath: { eq: "stones.jpeg" }) {
       childImageSharp {
         fluid(quality: 100, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
