@@ -18,7 +18,7 @@ const AboutContent = () => {
               amazing software projects successfully through hard work,
               attention to detail and great programming and organizational
               skills. With a clear understanding of Software development, Object
-              oriented programming and best practices. <br />3 Being a software
+              oriented programming and best practices. <br />Being a software
               developer, I aim to always build applications that are scalable,
               efficient and have great performance while providing engaging,
               adaptive, eye-candy user experiences. On the other hand,Developer

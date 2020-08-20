@@ -41,6 +41,7 @@ const Links = [
     direction: "down",
     color: "#4285F4",
     className: "one",
+    name:"Home"
   },
   {
     id: 2,
@@ -50,6 +51,7 @@ const Links = [
     direction: "left",
     color: "#DB4437",
     className: "two",
+    name: "About"
   },
   {
     id: 3,
@@ -58,7 +60,8 @@ const Links = [
     arialLabel: "Drinks Page",
     direction: "up",
     color: "#F4B400",
-    className: "four",
+    className: "three",
+    name: "Portfolio"
   },
   {
     id: 4,
@@ -67,7 +70,8 @@ const Links = [
     arialLabel: "Contact Page",
     direction: "left",
     color: "#0F9D58",
-    className: "five",
+    className: "four",
+    name:"Contact"
   },
 ]
 
