@@ -3,8 +3,8 @@ import { FcAbout } from "react-icons/fc"
 import {FcHome} from "react-icons/fc"
 import { FcCommandLine } from "react-icons/fc"
 import { RiMailSendLine } from "react-icons/ri"
-import { Link } from 'gatsby'
 import { motion } from "framer-motion"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "./menu.css"
 
 const variants = {
@@ -39,6 +39,7 @@ const Links = [
     icon: <FcHome size="40px" />,
     arialLabel: "Home Page",
     className: "link one",
+    color: "#4285F4"
   },
   {
     id: 2,
@@ -46,6 +47,7 @@ const Links = [
     icon: <FcAbout size="40px" color="green" />,
     arialLabel: "About Page",
     className: "link two",
+    color: "#DB4437"
   },
   {
     id: 3,
@@ -53,6 +55,7 @@ const Links = [
     icon: <FcCommandLine size="40px" color="blue" />,
     arialLabel: "Drinks Page",
     className: "link three",
+    color: "#F4B400"
   },
   {
     id: 4,
@@ -60,6 +63,7 @@ const Links = [
     icon: <RiMailSendLine size="40px" color="orange" />,
     arialLabel: "Contact Page",
     className: "link four",
+    color:"#0F9D58"
   },
 ]
 
@@ -70,9 +74,13 @@ export const Navbar = () => (
                key={link.id}
                variants={variants2}
              >
-               <Link to={link.path}>
-                 <button className={link.className}><span>{link.icon}</span></button>
-               </Link>
+               <AniLink
+            paintDrip
+            hex={link.color}
+            duration={1}
+                 to={link.path}
+            ><button className={link.className}><span>{link.icon}</span></button>
+            </AniLink>
              </motion.li>
            ))}
          </motion.ul>

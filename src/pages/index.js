@@ -1,7 +1,6 @@
 import React, {useEffect}from "react"
 import gsap from 'gsap';
 import Layout from "../layout/layout"
-import SEO from "../layout/seo"
 import HomeHero from '../components/homePage/HomeHero';
 import HomeOverlay from '../components/homePage/HomeOverlay'
 
