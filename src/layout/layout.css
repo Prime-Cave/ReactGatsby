@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: visible;
 }
 
 html{
@@ -22,4 +21,7 @@ a{
 button{
     font-family: 'Righteous';
 
+}
+.tl-edges{
+    overflow-x:visible;
 }
