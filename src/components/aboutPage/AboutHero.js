@@ -5,20 +5,15 @@ import AboutContent from './AboutContent'
 
 const AboutHero = () => {
   return (
-      <div>
+      <Wrap>
         <Background />
           <AboutContent />
-      </div>
+      </Wrap>
   )
 }
 
 const Wrap = styled.div`
-  width: 200vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: colum;
-  justify-content: center;
-  align-items: center;
+
 `
 
 export default AboutHero
