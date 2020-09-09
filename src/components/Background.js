@@ -70,7 +70,7 @@ const Background = () => {
                             "bounce": false,
                             "attract": {
                                 "enable": false,
-                                "rotateX": 600,
+                                "rotateX": 4000,
                                 "rotateY": 1200
                             }
                         }
@@ -124,8 +124,6 @@ const Background = () => {
 const Wrap = styled.div`
   *{
       background: rgb(5, 14, 53);
-      width: 100%;
-      height: 100%;
     }
 `
 

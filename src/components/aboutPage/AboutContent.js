@@ -41,6 +41,13 @@ const AboutContent = () => {
                 <h3>Soft skills</h3>
                 <SoftSkills />
               </div>
+          <div className="animate__animated animate__slideInLeft animate__delay-5s"> 
+                <h1 className="exp">Experience</h1>
+                <p>
+              <a href="https://mercurie.ng/" class="hbtn hb-fill-right-bg hpad2">Mercurie</a>
+              
+                </p>
+              </div>
             </div>
       </Wrap>
     )
@@ -74,8 +81,9 @@ const Wrap = styled.div`
     word-spacing: 4px
   }
    .header .skills{
-      font-size: 280%;
+      font-size: 270%;
   }
+  
 
   @media (max-width: 365px) {
     .header {
@@ -107,6 +115,61 @@ const Wrap = styled.div`
       font-size: 120%;
     }
   }
+
+  .hbtn {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      overflow: hidden;
+      padding: 8px 20px;
+      margin: 0px 3px 6px;
+      text-align: center;
+      border: 2px solid rgb(255, 255, 255);
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      white-space: nowrap;
+      z-index: 0;
+} 
+ 
+
+.hbtn i {
+      padding-right: 8px;
+} 
+ 
+
+.hb-fill-right-bg::before {
+      position: absolute;
+      content: "";
+      background: rgb(255, 255, 255);
+      transition-duration: 0.3s;
+      z-index: -1;
+      top: 0px;
+      right: auto;
+      bottom: auto;
+      left: 0px;
+      width: 0px;
+      height: 100%;
+      opacity: 1;
+} 
+ 
+
+.hb-fill-right-bg:hover::before {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+} 
+ 
+
+.hb-fill-right-bg:hover {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      transition: all 0.3s ease 0s;
+} 
+ 
+
+.hpad2 {
+      padding: 12px 24px !important;
+}
 `
 
 export default AboutContent

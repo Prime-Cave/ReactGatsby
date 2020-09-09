@@ -25,3 +25,7 @@ button{
 .tl-edges{
     overflow-x:visible;
 }
+
+#tsparticles {
+    overflow-x:visible;
+}
